@@ -71,3 +71,8 @@
 .filter-top-rated-btn {
     margin-left: 10px;
 }
+
+.user-card {
+    border: 1px solid black;
+    padding: 10px;
+}
