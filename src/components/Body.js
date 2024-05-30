@@ -51,7 +51,8 @@ const Body = () => {
                     let topRatedRestaurants = listOfRestaurants.filter(res => res.info.avgRating > 4);
                     setFilteredRestaurants(topRatedRestaurants)
                 }}>Rated 4.0+</button>
-                <input className="border border-black" value={loggedInUser} onChange={(e) => setUserName(e.target.value)}/>
+                <label className="px-2 m-2">UserName:</label>
+                <input className="border border-black px-1" value={loggedInUser} onChange={(e) => setUserName(e.target.value)}/>
             </div>
             <div className='flex flex-wrap p-4'>
                 {filteredRestaurants.map((data)=> (
